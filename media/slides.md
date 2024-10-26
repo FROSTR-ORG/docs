@@ -38,6 +38,8 @@ No need to move your funds when updating your keys.
 
 * You can discard and replace shares without changing your identity.
 
+---
+
 # Architecture
 
 Bifrost : FROST cryptography library.
@@ -106,4 +108,8 @@ Other signing methods need to be added (PSBT, ECDH, etc.)
 
 # Closing
 
-Make self-custody great again.
+The nostr key rotation problem needs a solution.
+
+FROST is the best solution on the market.
+
+Let's make nostr and self-custody great again!
