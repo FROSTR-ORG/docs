@@ -65,14 +65,23 @@ The protocol uses FROST in order to coordinate the signing of a message between 
 
 ## Resources
 
-**Bifrost**  
+**Frost**  
 Multi-platform Typescript FROST Library   
-https://github.com/cmdruid/bifrost
+https://github.com/cmdruid/frost
+
+**BiFrost**  
+Core library for implementing the FROSTR signing protocol.  
+https://github.com/frost-org/bifrost
 
 **Igloo**  
 Electron-based key-management app and remote signing server.  
-https://github.com/TABCONF-2024-FROST/igloo
+https://github.com/frost-org/igloo
 
 **Frost2x**  
 Web extension signing device (fork of nos2x).  
-https://github.com/TABCONF-2024-FROST/frost2x
+https://github.com/frost-org/frost2x
+
+**PermaFrost**  
+Remote signing server for FROSTR protocol.  
+https://github.com/frost-org/permafrost
+
