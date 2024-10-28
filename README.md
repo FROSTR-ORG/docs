@@ -16,9 +16,22 @@ This project was hacked together for entry in the TABCONF 2024 hack-a-thon event
 
 ## Architecture
 
-`Bifrost :` FROST cryptography library.
-`Igloo   :` Key management app & remote signing server.
-`Frost2x :` Browser signing extension (forked from nos2x).
+`Bifrost    :` FROSTR cryptography and protocol library.  
+`Igloo      :` Desktop key management app & signing device.  
+`PermaFrost :` Remote signing server (using express).  
+`Frost2x    :` Browser signing extension (forked from nos2x).  
+
+## TODO:
+
+There are a few things that need to be finished before a version 1.0 release:
+
+* Finish refactoring Bifrost library.
+* Finish refactoring Igloo application.
+* Finish updating PermaFrost and frost2x (once bifrost is ready).
+* Other signing methods need to be added (PSBT, ECDH, etc.).
+* Add a project kanban board for tracking updates.
+
+The code cleanup is needed in order to graduate this from a hackathon project to a real application.
 
 ## How it Works
 
@@ -49,24 +62,6 @@ The protocol uses FROST in order to coordinate the signing of a message between 
 * Import the shares into Igloo's recovery page, then click "rotate" to produce a set of new shares.
 
 * Import the new shares into each of your signing devices (including the remote signing server).
-
-## Current Progress
-
-* FROST library is complete, with unit tests and E2E tests.
-
-* Igloo generates shares and runs a remote signing server.
-
-* Frost2x extension signs via FROST and communicates with remote server.
-
-* Remote server verifies, co-signs and returns a response.
-
-## Unfinished Business
-
-* Signing process needs to be debugged (invalid signatures).
-
-* Key rotation needs to be implemented in igloo.
-
-* Other signing methods need to be added (PSBT, ECDH, etc.).
 
 ## Resources
 
